@@ -38,7 +38,7 @@ Content = """
 """
 
 [permalinks]
-posts = "/:year/:month/:slug/"
+notes = "/:section/:year/:month/:slugorfilename"
 
 [outputFormats.RSS]
 mediatype = "application/rss"
