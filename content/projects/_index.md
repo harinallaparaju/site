@@ -1,5 +1,5 @@
 ---
-title: Notes
+title: Projects
 description:
 archivesSlug: archives
 type: essays
@@ -8,5 +8,4 @@ cascade:
       kind: page
     ShowWordCount: false
     ShowReadingTime: false
-permalink: /notes/
 ---
