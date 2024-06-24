@@ -1,6 +1,6 @@
 ---
 title: Blogs
-description: Blogs are long-form articles
+description: 
 archivesSlug: archives
 permalink: /posts/
 ---
