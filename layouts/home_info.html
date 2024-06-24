@@ -1,0 +1,23 @@
+{{- with site.Params.homeInfoParams }}
+<article class="first-entry home-info">
+    <header class="entry-header">
+        <p>{{ .Title | markdownify }}</p>
+    </header>
+    <div class="hero-section-about">
+        <p class="hero-about my-name mark-line">M.Tech in <a href="/" class="highlight">Computer Science and Information Security</a>, NITW</p>
+    </div>
+    <div class="entry-content">
+        {{ .Content | markdownify }}
+
+        <!-- <li><b>Tinkerer at Heart:</b> I thrive on dismantling complex systems, understanding their intricacies, and reassembling them with improvements.</li>
+        
+        <li><b>Machine Learning Enthusiast:</b> Fascinated by AI's potential, I'm diving deep into machine learning algorithms and their real-world applications.</li> -->
+    </div>
+    <div class="entry-content">
+        
+    </div>
+    <footer class="entry-footer">
+        {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
+    </footer>
+</article>
+{{- end -}}

@@ -8,5 +8,5 @@ cascade:
       kind: page
     ShowWordCount: false
     ShowReadingTime: false
-permalink: /notes/_index/
+permalink: /notes/
 ---

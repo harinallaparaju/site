@@ -38,7 +38,7 @@ Content = """
 """
 
 [permalinks]
-
+posts = "/"
 
 [outputFormats.RSS]
 mediatype = "application/rss"
