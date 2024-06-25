@@ -1,5 +1,5 @@
 ---
-title: Blogs
+title: Blog
 description: 
 archivesSlug: archives
 permalink: /posts/
