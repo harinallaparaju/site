@@ -10,4 +10,3 @@ cascade:
     ShowReadingTime: false
 ---
  
-*Build in Progress*

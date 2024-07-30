@@ -1,8 +1,5 @@
-.first-entry {
+.first-entry .home-info {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     min-height: 320px;
     margin: var(--gap) 0 calc(var(--gap) * 2) 0;
 }
@@ -52,9 +49,17 @@
 }
 
 .entry-header {
-    font-size: 34.5px;
-    font-family: "EB Garamond", serif;
+    display: flex;
+    justify-content: center;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 25px;
     font-weight: 100;
+}
+
+.entry-header-flex {
+    display: flex;
+    justify-content: center;
+    font-family: "Space Grotesk", sans-serif;
 }
 
 .entry-header h2 {
@@ -115,9 +120,10 @@
 
 .hero-section-about {
     display: flex;
-    font-size: 20px;
-    font-weight: 300;
-  }
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 400;
+}
   
   /* a.highlight {
       cursor: pointer;

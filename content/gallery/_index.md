@@ -1,6 +1,6 @@
 ---
-title: Posts
+title: Gallery
 description: 
 archivesSlug: archives
-permalink: /posts/
+permalink: /gallery/
 ---

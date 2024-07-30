@@ -46,7 +46,7 @@ baseName = "feed"
 
 [menu]
 [[menu.main]]
-name = "Blog"
+name = "Posts"
 url = "/posts/"
 weight = 1
 [[menu.main]]
@@ -58,9 +58,13 @@ name = "Research"
 url = "/research/"
 weight = 3
 [[menu.main]]
-name = "Archives"
-url = "/archives/"
+name = "Gallery"
+url = "/gallery/"
 weight = 4
+[[menu.main]]
+name = "Contact"
+url = "/contact/"
+weight = 5
 
 [languages.en]
 languageName = "English"

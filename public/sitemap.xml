@@ -4,9 +4,13 @@
   <url>
     <loc>//localhost:1313/archives/</loc>
   </url><url>
-    <loc>//localhost:1313/posts/</loc>
-  </url><url>
     <loc>//localhost:1313/categories/</loc>
+  </url><url>
+    <loc>//localhost:1313/contact/</loc>
+  </url><url>
+    <loc>//localhost:1313/gallery/</loc>
+  </url><url>
+    <loc>//localhost:1313/posts/</loc>
   </url><url>
     <loc>//localhost:1313/projects/</loc>
   </url><url>

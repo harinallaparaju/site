@@ -1,11 +1,21 @@
 {{- with site.Params.homeInfoParams }}
 <article class="first-entry home-info">
     <header class="entry-header">
-        <p>{{ .Title | markdownify }}</p>
+        <p class="entry-header-flex">{{ .Title | markdownify }}</p>
     </header>
+
     <div class="hero-section-about">
-        <p class="hero-about my-name mark-line">M.Tech in Computer Science and Information Security, NITW</p>
+        <p class="hero-about my-name mark-line">MTech in Computer Science and Information Security</p>        
     </div>
+
+    <div class="hero-section-about">
+        <p class="hero-about my-name mark-line">NITW '26</p>        
+    </div>
+
+    <div class="hero-section-about">
+        <!-- <img src="images/intro.gif" alt="map image"> -->
+    </div>
+    
     <div class="entry-content">
         {{ .Content | markdownify }}
 
@@ -16,8 +26,10 @@
     <div class="entry-content">
         
     </div>
+ 
     <footer class="entry-footer">
         {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
+           
     </footer>
 </article>
 {{- end -}}

@@ -1,6 +1,6 @@
 ---
-title: Posts
+title: Contact
 description: 
 archivesSlug: archives
-permalink: /posts/
+permalink: /contact/
 ---
