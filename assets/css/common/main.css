@@ -7,10 +7,13 @@
 }
 
 .page-header h1 {
-    font-size: 30px;
+    font-size: 28px;
     display: flex;
     justify-content: center;
     font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
     
 }
 
