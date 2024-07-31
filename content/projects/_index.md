@@ -10,4 +10,4 @@ cascade:
     ShowReadingTime: false
 ---
  
-<img src="/images/projects.jpg.webp" alt="Projects-Gradient" style="max-width: 100%; height: 200px; width: 100%;">
+<img src="/site/images/projects.jpg.webp" alt="Projects-Gradient" style="max-width: 100%; height: 200px; width: 100%;">
