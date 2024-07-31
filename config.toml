@@ -28,7 +28,7 @@ ShowCodeCopyButtons = true
 ShowPostNavLinks = true
 Email = "hello@example.com"
 
-[params.socialAccounts.twitter]
+[params.socialAccounts.linkedin]
 username = ""
 
 [params.homeInfoParams]
