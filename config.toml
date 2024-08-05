@@ -58,12 +58,12 @@ name = "Research"
 url = "/research/"
 weight = 3
 [[menu.main]]
-name = "Gallery"
-url = "/gallery/"
-weight = 4
-[[menu.main]]
 name = "Contact"
 url = "/contact/"
+weight = 4
+[[menu.main]]
+name = "Gallery"
+url = "/gallery/"
 weight = 5
 
 [languages.en]
