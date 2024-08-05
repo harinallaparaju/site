@@ -8,7 +8,7 @@ permalink: /contact/
 <img src="/site/images/contact.jpg.webp" alt="Posts-Gradient" style="max-width: 100%; height: 200px; width: 100%;">
 
 <div>
-    <p style="display: flex; justify-content: center; font-size: 18px;">Get in touch! 👋</p>
+    <p style="display: flex; justify-content: center; font-size: 18px; margin-top: 5px">Get in touch! 👋</p>
     <p style="display: flex; justify-content: center;"></p>
 </div>
 

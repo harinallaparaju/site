@@ -129,6 +129,13 @@
     font-weight: 400;
 }
   
+.hero-section-music {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 14px;
+}
   /* a.highlight {
       cursor: pointer;
       text-decoration: none;
