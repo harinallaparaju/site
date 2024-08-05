@@ -7,7 +7,7 @@ enableEmoji = true
 
 [params]
 description = "PaperModX Example Site description"
-author = "Reorx"
+author = "Surya Nallaparaju"
 images = ["cover.png"]
 favicon = "favicon.ico"
 DateFormat = "2006-01-02"
