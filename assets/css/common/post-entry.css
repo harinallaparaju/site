@@ -83,7 +83,8 @@
 }
 
 .entry-footer {
-    margin-left: 76px;
+    display: flex;
+    justify-content: center;
     color: var(--secondary);
     font-size: 13px;
 }
