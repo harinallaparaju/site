@@ -5,4 +5,4 @@ archivesSlug: archives
 permalink: /gallery/
 ---
 
-![Alt text](/images/nitw.JPG)
+![Alt text](/site/images/nitw.JPG)
