@@ -7,118 +7,72 @@ permalink: /gallery/
 
 <!-- ![Alt text](/site/images/nitw.JPG) -->
 
-<div class="gallery-container">
-    <div class="gallery-grid">
-        <figure class="gallery-item">
-            <img 
-                src="/site/images/gallery-1.png" 
-                alt="Photo 1"
-                loading="lazy"
-                width="800"
-                height="600"
-                class="gallery-image"
-            >
-            <figcaption class="gallery-caption">Photo 1</figcaption>
-        </figure>
-        <figure class="gallery-item">
-            <img 
-                src="/site/images/nitw.JPG"
-                alt="Photo 2" 
-                loading="lazy"
-                width="800"
-                height="600"
-                class="gallery-image"
-            >
-            <figcaption class="gallery-caption">Photo 2</figcaption>
-        </figure>
-        <figure class="gallery-item">
-            <img 
-                src="/site/images/gallery-3.png"
-                alt="Photo 3"
-                loading="lazy" 
-                width="800"
-                height="600"
-                class="gallery-image"
-            >
-            <figcaption class="gallery-caption">Photo 3</figcaption>
-        </figure>
-        <figure class="gallery-item">
-            <img 
-                src="/site/images/gallery-4.png"
-                alt="Photo 4"
-                loading="lazy"
-                width="800"
-                height="600"
-                class="gallery-image"
-            >
-            <figcaption class="gallery-caption">Photo 4</figcaption>
-        </figure>
-    </div>
+<div class="photo-grid">
+    <img src="/site/images/gallery-1.png" alt="Photo 1">
+    <img src="/site/images/nitw.JPG" alt="Photo 2">
+    <img src="/site/images/gallery-3.png" alt="Photo 3">
+    <img src="/site/images/gallery-4.png" alt="Photo 4">
+    <!-- Add more photos here -->
 </div>
 
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+
 <style>
-.gallery-container {
-    max-width: 1200px;
+.photo-grid {
     margin: 0 auto;
-    padding: 2rem;
 }
 
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
+.grid-item {
+    width: 300px;
+    margin-bottom: 20px;
+    break-inside: avoid;
 }
 
-.gallery-item {
-    position: relative;
-    margin: 0;
-    border-radius: 12px;
-    overflow: hidden;
-    background: #fff;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.gallery-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-
-.gallery-image {
+.grid-item img {
+    display: block;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    aspect-ratio: 4/3;
+    height: auto;
+    border-radius: 8px;
     transition: transform 0.3s ease;
-}
-
-.gallery-caption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 1rem;
-    background: rgba(255,255,255,0.9);
-    backdrop-filter: blur(10px);
-    color: #333;
-    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
-    font-size: 0.9rem;
     opacity: 0;
-    transform: translateY(100%);
-    transition: all 0.3s ease;
 }
 
-.gallery-item:hover .gallery-caption {
+.grid-item img.loaded {
     opacity: 1;
-    transform: translateY(0);
 }
 
-@media (max-width: 768px) {
-    .gallery-grid {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 1rem;
+.grid-item img:hover {
+    transform: scale(1.03);
+}
+
+@media (max-width: 600px) {
+    .grid-item {
+        width: calc(50% - 10px);
     }
 }
 </style>
 
+<div class="photo-grid">
+    <div class="grid-item"><img src="/site/images/gallery-1.png" alt="Photo 1" loading="lazy"></div>
+    <div class="grid-item"><img src="/site/images/nitw.JPG" alt="Photo 2" loading="lazy"></div>
+    <div class="grid-item"><img src="/site/images/gallery-3.png" alt="Photo 3" loading="lazy"></div>
+    <div class="grid-item"><img src="/site/images/gallery-4.png" alt="Photo 4" loading="lazy"></div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var grid = document.querySelector('.photo-grid');
+    var msnry = new Masonry(grid, {
+        itemSelector: '.grid-item',
+        columnWidth: '.grid-item',
+        percentPosition: true,
+        gutter: 20
+    });
+
+    imagesLoaded(grid).on('progress', function(instance, image) {
+        image.img.classList.add('loaded');
+        msnry.layout();
+    });
+});
+</script>
